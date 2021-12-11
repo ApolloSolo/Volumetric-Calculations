@@ -1,0 +1,143 @@
+<html <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Frac Tanks</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <img class="apollo" src="https://img.icons8.com/color/48/000000/apollo.png"/>
+                <a class="navbar-brand" href="#">Probe</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Stick</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Frac Tanks
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Zone-1</a>
+                        <a class="dropdown-item" href="zone-2.html">Zone-2</a>
+                        <a class="dropdown-item" href="zone-3.html">Zone-3</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+        </header>
+
+        <h1>Zone-1</h1>
+        
+        <div class="container-grid">
+            <div class="container-flex">
+                <h2>Frac Tank 1A</h2>
+                <form id="tank1AInputs" class="flex">
+                    <input type="number" step="0.01" placeholder="DTP">
+                    <input type="number" step="0.01" placeholder="DTW">
+                    <button class="btn btn-primary">Calculate</button>
+                </form>
+
+              <div class="flex-row">
+
+                <div class="outputs">
+                  <div class="total-output output">
+                    <h3>Total Inches</h3>
+                    <input id="oneA-total-in" type="text">
+                  </div>
+                  <div class="water-output output">
+                    <h3>Water Inches</h3>
+                    <input id="oneA-water-in" type="text">
+                  </div>
+                  <div class="product-output output">
+                    <h3>Product Inches</h3>
+                    <input id="oneA-product-in" type="text">
+                  </div>
+                </div>
+
+                <div class="outputs">
+                  <div class="total-output output">
+                    <h3>Total Gallons</h3>
+                    <input id="oneA-total-gal" type="text">
+                  </div>
+                  <div class="water-output output">
+                    <h3>Water Gallons</h3>
+                    <input id="oneA-water-gal" type="text">
+                  </div>
+                  <div class="product-output output">
+                    <h3>Product Gallons</h3>
+                    <input id="oneA-product-gal" type="text">
+                  </div>
+                </div>
+                  
+
+              </div>
+                
+          </div>
+
+            <div class="container-flex">
+                <h2>Frac Tank 1B</h2>
+                <form id="tank1BInputs" class="flex">
+                    <input type="number" step="0.01" placeholder="DTP">
+                    <input type="number" step="0.01" placeholder="DTW">
+                    <button class="btn btn-primary">Calculate</button>
+                </form>
+
+                <div class="flex-row">
+
+                  <div class="outputs">
+                    <div class="total-output output">
+                      <h3>Total Inches</h3>
+                      <input id="oneB-total-in" type="text">
+                    </div>
+                    <div class="water-output output">
+                      <h3>Water Inches</h3>
+                      <input id="oneB-water-in" type="text">
+                    </div>
+                    <div class="product-output output">
+                      <h3>Product Inches</h3>
+                      <input id="oneB-product-in" type="text">
+                    </div>
+                  </div>
+
+                  <div class="outputs">
+                    <div class="total-output output">
+                      <h3>Total Gallons</h3>
+                      <input id="oneB-total-gal" type="text">
+                    </div>
+                    <div class="water-output output">
+                      <h3>Water Gallons</h3>
+                      <input id="oneB-water-gal" type="text">
+                    </div>
+                    <div class="product-output output">
+                      <h3>Product Gallons</h3>
+                      <input id="oneB-product-gal" type="text">
+                    </div>
+                  </div>
+                  
+                </div>
+
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
